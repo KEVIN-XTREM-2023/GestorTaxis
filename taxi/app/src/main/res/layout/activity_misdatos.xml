@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logoinicio"
+        tools:context=".misdatosActivity">
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Mis Datos"
+            android:textStyle="bold|italic"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editCedulaMisDatos"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Cedula"
+            android:enabled="false"
+            android:text=""
+            android:drawableStart="@drawable/cedula"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+
+        <EditText
+            android:id="@+id/editNombresMisDatos"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            android:enabled="false"
+            android:text=""
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <EditText
+            android:id="@+id/editApellidoMisDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            android:hint="Apellido"
+            android:enabled="false"
+            android:text=""
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNombresMisDatos" />
+
+
+
+        <EditText
+            android:id="@+id/editCooperativaMisDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:hint="Cooperativa"
+            android:enabled="false"
+            android:text=""
+            android:drawableStart="@drawable/cooperativa"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editApellidoMisDatos" />
+
+
+        <EditText
+            android:id="@+id/editEmailMisDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:enabled="false"
+            android:text=""
+            android:drawableStart="@drawable/correoelectronico"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCooperativaMisDatos" />
+
+
+        <Button
+            android:id="@+id/btnEnviarMisDatosUsuario"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="REGRESAR"
+
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailMisDatos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
